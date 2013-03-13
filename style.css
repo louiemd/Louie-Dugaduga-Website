@@ -1,0 +1,119 @@
+
+html {
+	padding:20px 0;
+}
+
+a {
+	
+}
+
+a:hover {
+	color:#eb560f;
+}
+
+body {
+	color:#333;
+	background:#eee url(img/bg.png);
+	font-family:'Arial';
+	font-size:13px;
+}
+
+.header {
+	font-family: 'Sanchez', serif;
+}
+
+/* Custom container */
+     .container {
+       margin: 0 auto;
+       max-width: 760px;
+		padding:40px;
+		background:#fff;
+     }
+     .container > hr {
+       margin: 60px 0;
+     }
+
+.mynav {
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+.mynav li {
+	display:inline;
+	float:left;
+	margin-right:30px;
+}
+
+.mynav li a {
+	text-transform:uppercase;
+}
+
+.circle {
+	width: 40px;
+	height: 40px;
+	background: #333;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+}
+
+.circle h1 {
+text-align:center;
+  color:#fff;
+  font-size:26px;
+  margin:0;
+ padding-top:0;
+ font-family: 'Georgia';
+font-weight:bold;
+}
+
+.intro {
+	margin:60px 0;
+font-family: 'Sanchez', serif;
+}
+
+.intro h3 {
+	font-weight:normal;
+}
+
+.mythreethumb {
+	margin:50px 0;
+}
+
+.mythreethumb p.small {
+	font-size:12px;
+}
+
+.mythreethumb .thumbnail  {
+	margin-bottom:10px;
+}
+
+.featured em, .mythreethumb em {
+	font-family:'Georgia';
+	color:#999;
+}
+
+hr {}
+	
+.social {
+	margin:0;
+	list-style:none;
+}
+
+.social a {
+	color:#333;
+}
+
+.social a:hover {
+	text-decoration:none;
+	color:#eb560f;
+}
+
+.contact h3 {
+	font-family: 'Sanchez', serif;
+}
+
+.contact input[type="text"], .contact textarea {
+	width:320px;
+}
