@@ -1,3 +1,53 @@
+<?php
+define("EMAIL", "louie.dugaduga@icloud.com");
+ 
+if(isset($_POST['submit'])) {
+   
+  include('validate.class.php');
+   
+  //assign post data to variables 
+  	$name = trim($_POST['name']);
+    $email = trim($_POST['email']);
+    $message = trim($_POST['message']);
+ 
+  //start validating our form
+  $v = new validate();
+  $v->validateStr($name, "name", 3, 75);
+  $v->validateEmail($email, "email");
+  $v->validateStr($message, "message", 5, 1000);  
+ 
+  if(!$v->hasErrors()) {
+        $header = "From: $email\n" . "Reply-To: $email\n";
+        $subject = "Contact Form from louiedugaduga.com";
+        $email_to = EMAIL;
+         
+        $emailMessage = "Name: " . $name . "\n";    
+        $emailMessage .= "Email: " . $email . "\n\n";
+        $emailMessage .= $message;
+         
+    //use php's mail function to send the email
+        @mail($email_to, $subject ,$emailMessage ,$header );  
+         
+    //grab the current url, append ?sent=yes to it and then redirect to that url
+        $url = "http". ((!empty($_SERVER['HTTPS'])) ? "s" : "") . "://".$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];
+        header('Location: '.$url."?sent=yes");
+ 
+    } else {
+    //set the number of errors message
+    $message_text = $v->errorNumMessage();       
+ 
+    //store the errors list in a variable
+    $errors = $v->displayErrors();
+     
+    //get the individual error messages
+    $nameErr = $v->getError("name");
+    $emailErr = $v->getError("email");
+    $messageErr = $v->getError("message");
+  }//end error check
+}// end isset
+?>
+
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,7 +70,7 @@
 			<navigation class="mynav">
 				<li><a href="index.html">Home</a></li> 
 				<li><a href="portfolio.html">Portfolio</a></li> 
-				<li><a href="contact.html">Contact</a></li>
+				<li><a href="contact.php">Contact</a></li>
 			</navigation>
 			<div class="clearfix"></div>
 		</div>
@@ -30,23 +80,23 @@
 			<div class="row-fluid">
 				<div class="span6">
 					<h3>Send me an email</h3>
-					<form>
-						<label for="">Name</label>
-						<p><input type="text"></p>
-						<label for="">Email</label>
-						<p><input type="text"></p>
-						<label for="">Message</label>
-						<p><textarea style="height:100px;"></textarea><br></p>
-						<p><input type="submit" value="send" class="btn"></p>
+					
+					<?php echo $errors; ?>
+					<?php if(isset($_GET['sent'])): ?><p class="alert alert-success">Your message has been sent. Thank You Very Much</p><?php endif; ?>
+					<form method="post" action".">
+						<label>Name <span class="alert alert-error fade in"><?php echo $nameErr; ?></span></label>
+						<p><input name="name" type="text" value="<?php echo htmlentities($name); ?>"></p>
+						<label>Email <span class="alert alert-error"><?php echo $emailErr ?></span></label>
+						<p><input name="email" type="text" value="<?php echo htmlentities($email); ?>"></p>
+						<label>Message <span class="alert alert-error"><?php echo $messageErr ?></span></label>
+						<p><textarea name="message" style="height:150px;"><?php echo htmlentities($message); ?></textarea><br></p>
+						<p><input name="submit" type="submit" value="Send" class="btn"></p>
 					</form>
 				</div>
 				<div class="span6">
-					<h3>My Tweets</h3>
-					<p>
-						<a class="twitter-timeline" href="https://twitter.com/brolouiemd" data-widget-id="311501812417036288">Tweets by @brolouiemd</a>
-						<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-						
-					</p>
+					<h3>&nbsp;</h3>
+					
+					
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -115,6 +165,6 @@
 	<!-- end container -->
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+	<script src="js/bootstrap-alert.js"></script>
   </body>
 </html>
