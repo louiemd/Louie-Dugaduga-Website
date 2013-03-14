@@ -3,8 +3,8 @@
 		<div class="span4" style="margin-left:0">
 			<hr>
 			<h4>About Me</h4>
-			<p>Well I have been in this industry for about 5 years and im happy to help clients building their websites.<br>
-				Here's a list of what i can offer<br>
+			<p>I have been in this industry for about 5 years and I'm happy to help clients building their websites.<br>
+				Here's a list of what I can do<br>
 				
 			</p>
 			<ul>
@@ -16,7 +16,7 @@
 		<div class="span4">
 			<hr>
 			<h4>What I am Reading</h4>
-			<p>I'm having fun of exploring new things specially in new technologies, here's a list of what i am reading.</p>
+			<p>I'm having fun of exploring new things specially in new technologies, here's a list of what I am reading.</p>
 			<ul>
 				<li>Smashing Magazine</li>
 				<li>Tutsplus (My Fav)</li>
@@ -27,7 +27,7 @@
 		<div class="span4">
 			<hr>
 			<h4>Contact</h4>
-			<p class="">Feel free to get in touch with me by email: louie.dugaduga@gmail.com<br>
+			<p>Feel free to get in touch with me by email: louie.dugaduga@gmail.com<br>
 			Or you can find me at these places:</p>
 			
 			<div class="row-fluid">

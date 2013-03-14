@@ -32,7 +32,7 @@
 	<link rel="shortcut icon" href="http://louiedugaduga.com/site/wp-content/uploads/2013/03/favicon.png">
 	<?php wp_head(); ?>
   </head>
-  <body>
+  <body <?php body_class(); ?>>
     <div class="container">
 		<div class="header">
 			<div class="circle">
@@ -51,8 +51,7 @@
 		
 		<?php if (is_front_page()) { ?>
 		<div class="intro">
-			<h3>Hello! I'm Louie Dugaduga from Philippines, I am a freelance web developer. I build responsive web design
-				and Wordpress Themes from scratch or configure Paid Themes depends on Client wants.
+			<h3>Hello! I'm Louie Dugaduga from Philippines, I am a passionate freelance web developer. I build responsive web design and Wordpress Themes from scratch or configure Paid Themes depends on Client wants.
 				</h3>
 		</div>
 		<!-- /intro -->
@@ -68,22 +67,22 @@
 			  <div class="carousel-inner">
 			    <div class="active item">
 			    		<div class="thumbnail">
-							<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/1.png" alt="">
+							<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/ld.png" alt="">
 						</div>
 						<div class="carousel-caption">
-							<h4 style="margin-top:20px;">Altwebservices</h4>
-							<p><em>Type of Work:</em> Web Design,HTML,CSS,Wordpress Integration<br>
-							<em>Url:</em> <a href="#">http://altwebservices.com</a></p>
+							<h4 style="margin-top:20px;">Louie Dugaduga</h4>
+							<p><em>Type of Work:</em> Wordpress Theme from scratch using Twitter Bootstrap Framework<br>
+							<em>Url:</em> <a href="http://louiedugaduga.com">www.louiedugaduga.com</a></p>
 						</div>
 			    </div>
 			    <div class="item">
 			    			<div class="thumbnail">
-								<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/2.png" alt="">
+								<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/tcp.png" alt="">
 							</div>
 							<div class="carousel-caption">
-								<h4 style="margin-top:20px;">Altwebservices</h4>
-								<p><em>Type of Work:</em> Web Design,HTML,CSS,Wordpress Integration<br>
-								<em>Url:</em> <a href="#">http://altwebservices.com</a></p>
+								<h4 style="margin-top:20px;">TCP Group Ireland</h4>
+								<p><em>Type of Work:</em> HTML,CSS,Wordpress Paid Themes Customisation<br>
+								<em>Url:</em> <a href="http://www.tcp.ie/">www.tcp.ie</a></p>
 							</div>
 			    </div>
 			    <div class="item">
@@ -93,7 +92,7 @@
 						<div class="carousel-caption">
 							<h4 style="margin-top:20px;">Altwebservices</h4>
 							<p><em>Type of Work:</em> Web Design,HTML,CSS,Wordpress Integration<br>
-							<em>Url:</em> <a href="#">http://altwebservices.com</a></p>
+							<em>Url:</em> <a href="http://altwebservices.com">www.altwebservices.com</a></p>
 						</div>
 			    </div>
 			  </div>

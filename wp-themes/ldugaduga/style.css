@@ -135,3 +135,16 @@ hr {}
 .custom-portfolio ul li {
 	margin-bottom:18px;
 }
+
+.home .rand-thumb {
+	list-style:none;
+	margin-left:0;
+}
+
+.home .rand-thumb li {
+/*	margin-right:15px;*/
+}
+
+.home .rand-thumb li:first-of-type {
+	margin-left:0;
+}
