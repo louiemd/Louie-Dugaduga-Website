@@ -15,16 +15,16 @@ get_header(); ?>
 						$thumb = get_post_meta($post->ID, 'Thumbnail', $single = true); 
 						?>
 						
-						<li class="span4" <?php if(!$count % 3) echo 'class="last"'; ?>>
+						<li class="span4" <?php // if(!$count % 3) echo 'class="last"'; ?>>
 							
 								<div class="thumbnail"><a class="thickbox" href="<?php echo $thumb; ?>"><img width="240" src="<?php echo $thumb; ?>" alt=""></a></div>
-							<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
+							<p class="small"><?php the_title(); ?></p>
 							
 							
 						</li>
 				<?php } ?>
 				</ul>
-				
+				<div class="clearfix"></div>
 			</div>
 		</div>
 		<!-- /mythreethumb -->

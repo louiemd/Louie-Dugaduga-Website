@@ -51,7 +51,7 @@
 		
 		<?php if (is_front_page()) { ?>
 		<div class="intro">
-			<h3>Hello! I'm Louie Dugaduga from Philippines, I am a passionate freelance web developer. I build responsive web design and Wordpress Themes from scratch or configure Paid Themes depends on Client wants.
+			<h3>Hello! I'm Louie Dugaduga from Philippines, I am a passionate freelance web developer. I build responsive website designs and Wordpress Themes from scratch or configure Paid Themes depends on Client wants.
 				</h3>
 		</div>
 		<!-- /intro -->
