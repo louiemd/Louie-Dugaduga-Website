@@ -148,3 +148,18 @@ hr {}
 .home .rand-thumb li:first-of-type {
 	margin-left:0;
 }
+
+.page_nav .page-numbers{
+  padding:4px 8px;
+  margin:0px 4px;
+  border:1px solid gray;
+  color:#FFB134;  
+}
+.page_nav .current{
+  border:1px solid #FFB134;
+  background-color:#FBEFDB;
+}
+.page_nav .prev, .page_nav .next{
+  border:none;
+  color:blue;
+}

@@ -41,6 +41,41 @@
 						
 						<?php endwhile; ?>
 						</ul>
+						
+						<!-- pagination -->
+						<?php
+						
+						// global $wp_query;
+						// 
+						// 						$total_pages = $wp_query->max_num_pages;
+						// 
+						// 						if ($total_pages > 1){
+						// 
+						// 						  $current_page = max(1, get_query_var('paged'));
+						// 
+						// 						  echo '<div class="page_nav">';
+						// 
+						// 						  echo paginate_links(array(
+						// 						      'base' => get_pagenum_link(1) . '%_%',
+						// 						      'format' => '/page/%#%',
+						// 						      'current' => $current_page,
+						// 						      'total' => $total_pages,
+						// 						      'prev_text' => 'Prev',
+						// 						      'next_text' => 'Next'
+						// 						    ));
+						// 
+						// 						  echo '</div>';
+						// 
+						// 						}
+						
+						
+						?>
+						
+						<div class="navigation">
+							<div class="alignleft"><h5><?php next_posts_link('&laquo; Older Entries') ?></h5></div>
+							<div class="alignright"><h5><?php previous_posts_link('Newer Entries &raquo;') ?></h5></div>						
+						</div>
+						
 						<div class="clearfix"></div>
 						<?php else : ?>
 

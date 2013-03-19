@@ -40,11 +40,12 @@
 			</div>
 			<h2 style="margin-bottom:0"><?php bloginfo('name'); ?></h2>
 			<p><em><?php bloginfo('description'); ?></em></p>
-			<navigation class="mynav">
+			<ul class="mynav">
 				<li><a href="<?php echo get_option('home'); ?>/">Home</a></li> 
+				<li><a target="_blank" href="/site/wp-content/uploads/2013/03/louie-cv.pdf">CV</a></li>
 				<li><a href="<?php echo get_option('home'); ?>/portfolio">Portfolio</a></li> 
 				<li><a href="<?php echo get_option('home'); ?>/contact">Contact</a></li>
-			</navigation>
+			</ul>
 			<div class="clearfix"></div>
 		</div>
 		<!-- header -->
