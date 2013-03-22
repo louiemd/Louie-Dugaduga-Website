@@ -62,38 +62,39 @@
 			  <ol class="carousel-indicators">
 			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 			    <li data-target="#myCarousel" data-slide-to="1"></li>
-			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			   <li data-target="#myCarousel" data-slide-to="2"></li>
 			  </ol>
 			  <!-- Carousel items -->
 			  <div class="carousel-inner">
 			    <div class="active item">
 			    		<div class="thumbnail">
-							<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/ld.png" alt="">
+							<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/ld.png" alt="louiedugaduga">
 						</div>
 						<div class="carousel-caption">
-							<h4 style="margin-top:20px;">Louie Dugaduga</h4>
+							<h4>Louie Dugaduga</h4>
 							<p><em>Type of Work:</em> Wordpress Theme from scratch using Twitter Bootstrap Framework<br>
-							<em>Url:</em> <a href="http://louiedugaduga.com">www.louiedugaduga.com</a></p>
+							<em>Url:</em> <a href="http://louiedugaduga.com">louiedugaduga.com</a></p>
 						</div>
 			    </div>
+			   
 			    <div class="item">
 			    			<div class="thumbnail">
-								<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/tcp.png" alt="">
+								<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/bayanist-c.jpg" alt="bayanistore">
 							</div>
 							<div class="carousel-caption">
-								<h4 style="margin-top:20px;">TCP Group Ireland</h4>
-								<p><em>Type of Work:</em> HTML,CSS,Wordpress Paid Themes Customisation<br>
-								<em>Url:</em> <a href="http://www.tcp.ie/">www.tcp.ie</a></p>
+								<h4>Bayanistore</h4>
+								<p><em>Type of Work:</em> HTML,CSS, Cs-Cart Template Customisation<br>
+								<em>Url:</em> <a href="http://bayanistore.com/">bayanistore.com</a></p>
 							</div>
 			    </div>
 			    <div class="item">
 			    		<div class="thumbnail">
-							<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/3.png" alt="">
+							<img width="760" src="<?php bloginfo('stylesheet_directory'); ?>/img/carousel/3.png" alt="Altwebservices">
 						</div>
 						<div class="carousel-caption">
-							<h4 style="margin-top:20px;">Altwebservices</h4>
+							<h4>Altwebservices</h4>
 							<p><em>Type of Work:</em> Web Design,HTML,CSS,Wordpress Integration<br>
-							<em>Url:</em> <a href="http://altwebservices.com">www.altwebservices.com</a></p>
+							<em>Url:</em> <a href="http://altwebservices.com">altwebservices.com</a></p>
 						</div>
 			    </div>
 			  </div>

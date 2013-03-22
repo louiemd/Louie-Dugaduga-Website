@@ -15,7 +15,11 @@
 		</div>
 		<div class="span4">
 			<hr>
-			<h4>What I am Reading</h4>
+			<h4>Flickr</h4>
+			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('flickr-widget') ) : ?><?php endif; ?>
+			
+			<!--
+<h4>What I am Reading</h4>
 			<p>I'm having fun of exploring new things specially in new technologies, here's a list of what I am reading.</p>
 			<ul>
 				<li>Smashing Magazine</li>
@@ -23,6 +27,7 @@
 				<li>A list apart</li>
 				<li>Many more...</li>
 			</ul>
+-->
 		</div>
 		<div class="span4">
 			<hr>

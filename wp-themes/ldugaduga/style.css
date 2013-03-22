@@ -163,3 +163,17 @@ hr {}
   border:none;
   color:blue;
 }
+
+.flickr ul {
+	list-style-type: none;
+	margin: 0;
+}
+
+.flickr ul li, .flickr ul li a {
+	display: block;
+	float: left;
+}
+
+.flickr ul li a {
+	margin: 0 5px 7px 0;
+}
